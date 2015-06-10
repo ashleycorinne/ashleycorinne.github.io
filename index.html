@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ashley McBride | Front-End Developer</title>
+
+<meta name = "keywords" content = "SMINT jQuery Plugin, SMINT, jQuery Plugin, One Page Website, Sticky Navigation" />
+<meta name = "description" content = "SMINT is a simple plugin for lovers of one page websites, which helps with sticky menus and page scrolling." />
+<meta name="viewport" content="width=device-width">
+
+<link rel="shortcut icon" type="../image/x-icon" href="img/favicon.png">
+ <link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.css">
+<link href="css/demo.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script	src="js/jquery.smint.js" type="text/javascript" ></script>
+<script type="text/javascript" src="js/form.js"></script>
+<script type="text/javascript">
+
+$(document).ready( function() {
+    $('.subMenu').smint({
+    	'scrollSpeed' : 1000
+    });
+    $('.skillbar').each(function(){
+		$(this).find('.skillbar-bar').animate({
+			width:$(this).attr('data-percent')
+		},6000);
+	});
+});
+
+
+</script>
+
+
+</head>
+<body>
+<div class="wrap ">
+	<div class="section sTop">
+		<div>
+			<img src="img/LogoSymbol.png"  class="brandLogo">
+		</div>
+		<div class="inner">
+			<div class="logoHeader">
+			<img src="img/NewLogo.png">
+			</div>
+		</div>
+	</div>
+
+	<div class="subMenu" >
+	 	<div class="inner">
+	 		<a href="#sTop" class="subNavBtn"><i class="fa fa-home"></i></a>
+	 		<a href="#s1" class="subNavBtn"><i class="fa fa-gamepad"></i></a> 
+			<a href="#s2" class="subNavBtn"><i class="fa fa-wrench"></i></a>
+			<a href="#s3" class="subNavBtn"><i class="fa fa-graduation-cap"></i></a>
+			<a href="#s4" class="subNavBtn"><i class="fa fa-comment"></i></a>
+		</div>
+	</div>
+
+	<div class="section s1">
+		<div class="inner">
+			<div class="header">WHO AM I?</div>
+			<hr />
+			<div style="margin-bottom:20px;">I'm Ashley McBride, a front-end developer working in web development and application programming. My job is to build your website or application so that it is functional and user-friendly but at the same time attractive. </div>
+			<div>
+			Currently I attend Eastern Washington University, WA. I am obtaining my bachelors degree in Computer Information Systems with an emphasis in Design. I am interning at a private corporation. Learning in the classroom while interning has provided me with knowledge and experience that I need to be successful in this field.
+			</div>
+		</div>
+	</div>
+
+	<div class="section s2">
+		<div class="inner">
+			<div class="header">SKILLS</div>
+			<hr/>
+<div class="skillbar clearfix " data-percent="85%">
+	<div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
+	<div class="skillbar-bar" style="background: #e67e22;"></div>
+	<div class="skill-bar-percent">85%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="90%">
+	<div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
+	<div class="skillbar-bar" style="background: #3498db;"></div>
+	<div class="skill-bar-percent">90%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="80%">
+	<div class="skillbar-title" style="background: #2c3e50;"><span>jQuery</span></div>
+	<div class="skillbar-bar" style="background: #2c3e50;"></div>
+	<div class="skill-bar-percent">80%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="90%">
+	<div class="skillbar-title" style="background: #27ae60;"><span>C#</span></div>
+	<div class="skillbar-bar" style="background: #2ecc71;"></div>
+	<div class="skill-bar-percent">90%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="20%">
+	<div class="skillbar-title" style="background: #124e8c;"><span>SINGING</span></div>
+	<div class="skillbar-bar" style="background: #4288d0;"></div>
+	<div class="skill-bar-percent">20%</div>
+</div> 
+		</div>
+	</div>
+
+
+
+	<div class="section s3">
+		<div class="inner">
+			<div class="header">EXPERIENCE</div>
+			<hr/>
+			<div class="job">
+				<div class="jobTime">2014-Present </div><div class="jobName">Trans-System Inc.</div>
+				<div class="jobTitle">Programming Intern</div>
+				<div>Works in a team environment in the design and execution of web and
+				mobile products for the company. Provides assistance and development to the core
+				programs and administrative functions of the company.</div>
+			</div>
+			<div class="job">
+				<div class="jobTime">2011-2014</div><div class="jobName">EWU Bookstore</div>
+				<div class="jobTitle">Customer Service</div>
+				<div>Interacted with customers to provide and process information in response to inquiries, concerns and requests about products and services.</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section s4">
+		<div class="inner">
+			<div class="header">GET IN TOUCH</div>
+			<hr/>
+			<div style="height:50px;"></div>
+			<form class="form" id="form1" action="http://formspree.io/amcbride@eagles.ewu.edu" method="POST">
+		      <p class="name">
+		      	<i class="formIcon fa fa-user"></i>
+		        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+		      </p>
+		      
+		      <p class="email">
+		      	<i class="formIcon fa fa-envelope"></i>
+		        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+		      </p>
+		      
+		      <p class="text">
+		      	<i class="formIcon fa fa-pencil"></i>
+		        <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+		      </p>
+		      
+		      
+		      <div class="submit">
+		        <input type="submit" value="SEND" id="button-blue"/>
+		        <div class="ease"></div>
+		      </div>
+		    </form>
+		</div>
+	</div>
+
+	
+</div>
+
+</body>
+</html>
